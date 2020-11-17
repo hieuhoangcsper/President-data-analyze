@@ -1,0 +1,327 @@
+presidentperid=read.csv("D:/New folder (2)/presidentperid.csv")
+Alabama=presidentperid[presidentperid$state=="Alabama",c("year","state","party","candidatevotes")]
+library(dplyr)
+Alabama_max=summarize(group_by(Alabama,year),candidatevotes=max(candidatevotes))
+Alabama_max_merge=merge(Alabama_max,Alabama,by=c('candidatevotes'))
+Alabama_max_merge_ar=arrange(Alabama_max_merge,year.x)
+
+Alaska=presidentperid[presidentperid$state=="Alaska",c("year","state","party","candidatevotes")]
+Alaska_max=summarize(group_by(Alaska,year),candidatevotes=max(candidatevotes))
+Alaska_max_merge=merge(Alaska_max,Alaska,by=c('candidatevotes'))
+Alaska_max_merge_ar=arrange(Alaska_max_merge,year.x)
+
+Arizona=presidentperid[presidentperid$state=="Arizona",c("year","state","party","candidatevotes")]
+Arizona_max=summarize(group_by(Arizona,year),candidatevotes=max(candidatevotes))
+Arizona_max_merge=merge(Arizona_max,Arizona,by=c('candidatevotes'))
+Arizona_max_merge_ar=arrange(Arizona_max_merge,year.x)
+
+Arkansas=presidentperid[presidentperid$state=="Arkansas",c("year","state","party","candidatevotes")]
+Arkansas_max=summarize(group_by(Arkansas,year),candidatevotes=max(candidatevotes))
+Arkansas_max_merge=merge(Arkansas_max,Arkansas,by=c('candidatevotes'))
+Arkansas_max_merge_ar=arrange(Arkansas_max_merge,year.x)
+
+California=presidentperid[presidentperid$state=="California",c("year","state","party","candidatevotes")]
+California_max=summarize(group_by(California,year),candidatevotes=max(candidatevotes))
+California_max_merge=merge(California_max,California,by=c('candidatevotes'))
+California_max_merge_ar=arrange(California_max_merge,year.x)
+
+Colorado=presidentperid[presidentperid$state=="Colorado",c("year","state","party","candidatevotes")]
+Colorado_max=summarize(group_by(Colorado,year),candidatevotes=max(candidatevotes))
+Colorado_max_merge=merge(Colorado_max,Colorado,by=c('candidatevotes'))
+Colorado_max_merge_ar=arrange(Colorado_max_merge,year.x)
+
+Connecticut=presidentperid[presidentperid$state=="Connecticut",c("year","state","party","candidatevotes")]
+Connecticut_max=summarize(group_by(Connecticut,year),candidatevotes=max(candidatevotes))
+Connecticut_max_merge=merge(Connecticut_max,Connecticut,by=c('candidatevotes'))
+Connecticut_max_merge_ar=arrange(Connecticut_max_merge,year.x)
+
+Delaware=presidentperid[presidentperid$state=="Delaware",c("year","state","party","candidatevotes")]
+Delaware_max=summarize(group_by(Delaware,year),candidatevotes=max(candidatevotes))
+Delaware_max_merge=merge(Delaware_max,Delaware,by=c('candidatevotes'))
+Delaware_max_merge_ar=arrange(Delaware_max_merge,year.x)
+
+DistrictofColumbia=presidentperid[presidentperid$state=="District of Columbia",c("year","state","party","candidatevotes")]
+DistrictofColumbia_max=summarize(group_by(DistrictofColumbia,year),candidatevotes=max(candidatevotes))
+DistrictofColumbia_max_merge=merge(DistrictofColumbia_max,DistrictofColumbia,by=c('candidatevotes'))
+DistrictofColumbia_max_merge_ar=arrange(DistrictofColumbia_max_merge,year.x)
+
+Florida=presidentperid[presidentperid$state=="Florida",c("year","state","party","candidatevotes")]
+Florida_max=summarize(group_by(Florida,year),candidatevotes=max(candidatevotes))
+Florida_max_merge=merge(Florida_max,Florida,by=c('candidatevotes'))
+Florida_max_merge_ar=arrange(Florida_max_merge,year.x)
+
+Georgia=presidentperid[presidentperid$state=="Georgia",c("year","state","party","candidatevotes")]
+Georgia_max=summarize(group_by(Georgia,year),candidatevotes=max(candidatevotes))
+Georgia_max_merge=merge(Georgia_max,Georgia,by=c('candidatevotes'))
+Georgia_max_merge_ar=arrange(Georgia_max_merge,year.x)
+
+Hawaii=presidentperid[presidentperid$state=="Hawaii",c("year","state","party","candidatevotes")]
+Hawaii_max=summarize(group_by(Hawaii,year),candidatevotes=max(candidatevotes))
+Hawaii_max_merge=merge(Hawaii_max,Hawaii,by=c('candidatevotes'))
+Hawaii_max_merge_ar=arrange(Hawaii_max_merge,year.x)
+
+Idaho=presidentperid[presidentperid$state=="Idaho",c("year","state","party","candidatevotes")]
+Idaho_max=summarize(group_by(Idaho,year),candidatevotes=max(candidatevotes))
+Idaho_max_merge=merge(Idaho_max,Idaho,by=c('candidatevotes'))
+Idaho_max_merge_ar=arrange(Idaho_max_merge,year.x)
+
+Illinois=presidentperid[presidentperid$state=="Illinois",c("year","state","party","candidatevotes")]
+Illinois_max=summarize(group_by(Illinois,year),candidatevotes=max(candidatevotes))
+Illinois_max_merge=merge(Illinois_max,Illinois,by=c('candidatevotes'))
+Illinois_max_merge_ar=arrange(Illinois_max_merge,year.x)
+
+Indiana=presidentperid[presidentperid$state=="Indiana",c("year","state","party","candidatevotes")]
+Indiana_max=summarize(group_by(Indiana,year),candidatevotes=max(candidatevotes))
+Indiana_max_merge=merge(Indiana_max,Indiana,by=c('candidatevotes'))
+Indiana_max_merge_ar=arrange(Indiana_max_merge,year.x)
+
+Iowa=presidentperid[presidentperid$state=="Iowa",c("year","state","party","candidatevotes")]
+Iowa_max=summarize(group_by(Iowa,year),candidatevotes=max(candidatevotes))
+Iowa_max_merge=merge(Iowa_max,Iowa,by=c('candidatevotes'))
+Iowa_max_merge_ar=arrange(Iowa_max_merge,year.x)
+
+Kansas=presidentperid[presidentperid$state=="Kansas",c("year","state","party","candidatevotes")]
+Kansas_max=summarize(group_by(Kansas,year),candidatevotes=max(candidatevotes))
+Kansas_max_merge=merge(Kansas_max,Kansas,by=c('candidatevotes'))
+Kansas_max_merge_ar=arrange(Kansas_max_merge,year.x)
+
+Kentucky=presidentperid[presidentperid$state=="Kentucky",c("year","state","party","candidatevotes")]
+Kentucky_max=summarize(group_by(Kentucky,year),candidatevotes=max(candidatevotes))
+Kentucky_max_merge=merge(Kentucky_max,Kentucky,by=c('candidatevotes'))
+Kentucky_max_merge_ar=arrange(Kentucky_max_merge,year.x)
+
+Louisiana=presidentperid[presidentperid$state=="Louisiana",c("year","state","party","candidatevotes")]
+Louisiana_max=summarize(group_by(Louisiana,year),candidatevotes=max(candidatevotes))
+Louisiana_max_merge=merge(Louisiana_max,Louisiana,by=c('candidatevotes'))
+Louisiana_max_merge_ar=arrange(Louisiana_max_merge,year.x)
+
+Maine=presidentperid[presidentperid$state=="Maine",c("year","state","party","candidatevotes")]
+Maine_max=summarize(group_by(Maine,year),candidatevotes=max(candidatevotes))
+Maine_max_merge=merge(Maine_max,Maine,by=c('candidatevotes'))
+Maine_max_merge_ar=arrange(Maine_max_merge,year.x)
+
+Maryland=presidentperid[presidentperid$state=="Maryland",c("year","state","party","candidatevotes")]
+Maryland_max=summarize(group_by(Maryland,year),candidatevotes=max(candidatevotes))
+Maryland_max_merge=merge(Maryland_max,Maryland,by=c('candidatevotes'))
+Maryland_max_merge_ar=arrange(Maryland_max_merge,year.x)
+
+Massachusetts=presidentperid[presidentperid$state=="Massachusetts",c("year","state","party","candidatevotes")]
+Massachusetts_max=summarize(group_by(Massachusetts,year),candidatevotes=max(candidatevotes))
+Massachusetts_max_merge=merge(Massachusetts_max,Massachusetts,by=c('candidatevotes'))
+Massachusetts_max_merge_ar=arrange(Massachusetts_max_merge,year.x)
+
+Michigan=presidentperid[presidentperid$state=="Michigan",c("year","state","party","candidatevotes")]
+Michigan_max=summarize(group_by(Michigan,year),candidatevotes=max(candidatevotes))
+Michigan_max_merge=merge(Michigan_max,Michigan,by=c('candidatevotes'))
+Michigan_max_merge_ar=arrange(Michigan_max_merge,year.x)
+
+Minnesota=presidentperid[presidentperid$state=="Minnesota",c("year","state","party","candidatevotes")]
+Minnesota_max=summarize(group_by(Minnesota,year),candidatevotes=max(candidatevotes))
+Minnesota_max_merge=merge(Minnesota_max,Minnesota,by=c('candidatevotes'))
+Minnesota_max_merge_ar=arrange(Minnesota_max_merge,year.x)
+
+Mississippi=presidentperid[presidentperid$state=="Mississippi",c("year","state","party","candidatevotes")]
+Mississippi_max=summarize(group_by(Mississippi,year),candidatevotes=max(candidatevotes))
+Mississippi_max_merge=merge(Mississippi_max,Mississippi,by=c('candidatevotes'))
+Mississippi_max_merge_ar=arrange(Mississippi_max_merge,year.x)
+
+Missouri=presidentperid[presidentperid$state=="Missouri",c("year","state","party","candidatevotes")]
+Missouri_max=summarize(group_by(Missouri,year),candidatevotes=max(candidatevotes))
+Missouri_max_merge=merge(Missouri_max,Missouri,by=c('candidatevotes'))
+Missouri_max_merge_ar=arrange(Missouri_max_merge,year.x)
+
+Montana=presidentperid[presidentperid$state=="Montana",c("year","state","party","candidatevotes")]
+Montana_max=summarize(group_by(Montana,year),candidatevotes=max(candidatevotes))
+Montana_max_merge=merge(Montana_max,Montana,by=c('candidatevotes'))
+Montana_max_merge_ar=arrange(Montana_max_merge,year.x)
+
+Nebraska=presidentperid[presidentperid$state=="Nebraska",c("year","state","party","candidatevotes")]
+Nebraska_max=summarize(group_by(Nebraska,year),candidatevotes=max(candidatevotes))
+Nebraska_max_merge=merge(Nebraska_max,Nebraska,by=c('candidatevotes'))
+Nebraska_max_merge_ar=arrange(Nebraska_max_merge,year.x)
+
+Nevada=presidentperid[presidentperid$state=="Nevada",c("year","state","party","candidatevotes")]
+Nevada_max=summarize(group_by(Nevada,year),candidatevotes=max(candidatevotes))
+Nevada_max_merge=merge(Nevada_max,Nevada,by=c('candidatevotes'))
+Nevada_max_merge_ar=arrange(Nevada_max_merge,year.x)
+
+NewHampshire=presidentperid[presidentperid$state=="New Hampshire",c("year","state","party","candidatevotes")]
+NewHampshire_max=summarize(group_by(NewHampshire,year),candidatevotes=max(candidatevotes))
+NewHampshire_max_merge=merge(NewHampshire_max,NewHampshire,by=c('candidatevotes'))
+NewHampshire_max_merge_ar=arrange(NewHampshire_max_merge,year.x)
+
+NewJersey=presidentperid[presidentperid$state=="New Jersey",c("year","state","party","candidatevotes")]
+NewJersey_max=summarize(group_by(NewJersey,year),candidatevotes=max(candidatevotes))
+NewJersey_max_merge=merge(NewJersey_max,NewJersey,by=c('candidatevotes'))
+NewJersey_max_merge_ar=arrange(NewJersey_max_merge,year.x)
+
+NewMexico=presidentperid[presidentperid$state=="New Mexico",c("year","state","party","candidatevotes")]
+NewMexico_max=summarize(group_by(NewMexico,year),candidatevotes=max(candidatevotes))
+NewMexico_max_merge=merge(NewMexico_max,NewMexico,by=c('candidatevotes'))
+NewMexico_max_merge_ar=arrange(NewMexico_max_merge,year.x)
+
+NewYork=presidentperid[presidentperid$state=="New York",c("year","state","party","candidatevotes")]
+NewYork_max=summarize(group_by(NewYork,year),candidatevotes=max(candidatevotes))
+NewYork_max_merge=merge(NewYork_max,NewYork,by=c('candidatevotes'))
+NewYork_max_merge_ar=arrange(NewYork_max_merge,year.x)
+
+NorthCarolina=presidentperid[presidentperid$state=="North Carolina",c("year","state","party","candidatevotes")]
+NorthCarolina_max=summarize(group_by(NorthCarolina,year),candidatevotes=max(candidatevotes))
+NorthCarolina_max_merge=merge(NorthCarolina_max,NorthCarolina,by=c('candidatevotes'))
+NorthCarolina_max_merge_ar=arrange(NorthCarolina_max_merge,year.x)
+
+NorthDakota=presidentperid[presidentperid$state=="North Dakota",c("year","state","party","candidatevotes")]
+NorthDakota_max=summarize(group_by(NorthDakota,year),candidatevotes=max(candidatevotes))
+NorthDakota_max_merge=merge(NorthDakota_max,NorthDakota,by=c('candidatevotes'))
+NorthDakota_max_merge_ar=arrange(NorthDakota_max_merge,year.x)
+
+Ohio=presidentperid[presidentperid$state=="Ohio",c("year","state","party","candidatevotes")]
+Ohio_max=summarize(group_by(Ohio,year),candidatevotes=max(candidatevotes))
+Ohio_max_merge=merge(Ohio_max,Ohio,by=c('candidatevotes'))
+Ohio_max_merge_ar=arrange(Ohio_max_merge,year.x)
+
+Oklahoma=presidentperid[presidentperid$state=="Oklahoma",c("year","state","party","candidatevotes")]
+Oklahoma_max=summarize(group_by(Oklahoma,year),candidatevotes=max(candidatevotes))
+Oklahoma_max_merge=merge(Oklahoma_max,Oklahoma,by=c('candidatevotes'))
+Oklahoma_max_merge_ar=arrange(Oklahoma_max_merge,year.x)
+
+Oregon=presidentperid[presidentperid$state=="Oregon",c("year","state","party","candidatevotes")]
+Oregon_max=summarize(group_by(Oregon,year),candidatevotes=max(candidatevotes))
+Oregon_max_merge=merge(Oregon_max,Oregon,by=c('candidatevotes'))
+Oregon_max_merge_ar=arrange(Oregon_max_merge,year.x)
+
+Pennsylvania=presidentperid[presidentperid$state=="Pennsylvania",c("year","state","party","candidatevotes")]
+Pennsylvania_max=summarize(group_by(Pennsylvania,year),candidatevotes=max(candidatevotes))
+Pennsylvania_max_merge=merge(Pennsylvania_max,Pennsylvania,by=c('candidatevotes'))
+Pennsylvania_max_merge_ar=arrange(Pennsylvania_max_merge,year.x)
+
+RhodeIsland=presidentperid[presidentperid$state=="Rhode Island",c("year","state","party","candidatevotes")]
+RhodeIsland_max=summarize(group_by(RhodeIsland,year),candidatevotes=max(candidatevotes))
+RhodeIsland_max_merge=merge(RhodeIsland_max,RhodeIsland,by=c('candidatevotes'))
+RhodeIsland_max_merge_ar=arrange(RhodeIsland_max_merge,year.x)
+
+SouthCarolina=presidentperid[presidentperid$state=="South Carolina",c("year","state","party","candidatevotes")]
+SouthCarolina_max=summarize(group_by(SouthCarolina,year),candidatevotes=max(candidatevotes))
+SouthCarolina_max_merge=merge(SouthCarolina_max,SouthCarolina,by=c('candidatevotes'))
+SouthCarolina_max_merge_ar=arrange(SouthCarolina_max_merge,year.x)
+
+SouthDakota=presidentperid[presidentperid$state=="South Dakota",c("year","state","party","candidatevotes")]
+SouthDakota_max=summarize(group_by(SouthDakota,year),candidatevotes=max(candidatevotes))
+SouthDakota_max_merge=merge(SouthDakota_max,SouthDakota,by=c('candidatevotes'))
+SouthDakota_max_merge_ar=arrange(SouthDakota_max_merge,year.x)
+
+Tennessee=presidentperid[presidentperid$state=="Tennessee",c("year","state","party","candidatevotes")]
+Tennessee_max=summarize(group_by(Tennessee,year),candidatevotes=max(candidatevotes))
+Tennessee_max_merge=merge(Tennessee_max,Tennessee,by=c('candidatevotes'))
+Tennessee_max_merge_ar=arrange(Tennessee_max_merge,year.x)
+
+Texas=presidentperid[presidentperid$state=="Texas",c("year","state","party","candidatevotes")]
+Texas_max=summarize(group_by(Texas,year),candidatevotes=max(candidatevotes))
+Texas_max_merge=merge(Texas_max,Texas,by=c('candidatevotes'))
+Texas_max_merge_ar=arrange(Texas_max_merge,year.x)
+
+Utah=presidentperid[presidentperid$state=="Utah",c("year","state","party","candidatevotes")]
+Utah_max=summarize(group_by(Utah,year),candidatevotes=max(candidatevotes))
+Utah_max_merge=merge(Utah_max,Utah,by=c('candidatevotes'))
+Utah_max_merge_ar=arrange(Utah_max_merge,year.x)
+
+Vermont=presidentperid[presidentperid$state=="Vermont",c("year","state","party","candidatevotes")]
+Vermont_max=summarize(group_by(Vermont,year),candidatevotes=max(candidatevotes))
+Vermont_max_merge=merge(Vermont_max,Vermont,by=c('candidatevotes'))
+Vermont_max_merge_ar=arrange(Vermont_max_merge,year.x)
+
+Virginia=presidentperid[presidentperid$state=="Virginia",c("year","state","party","candidatevotes")]
+Virginia_max=summarize(group_by(Virginia,year),candidatevotes=max(candidatevotes))
+Virginia_max_merge=merge(Virginia_max,Virginia,by=c('candidatevotes'))
+Virginia_max_merge_ar=arrange(Virginia_max_merge,year.x)
+
+Washington=presidentperid[presidentperid$state=="Washington",c("year","state","party","candidatevotes")]
+Washington_max=summarize(group_by(Washington,year),candidatevotes=max(candidatevotes))
+Washington_max_merge=merge(Washington_max,Washington,by=c('candidatevotes'))
+Washington_max_merge_ar=arrange(Washington_max_merge,year.x)
+
+WestVirginia=presidentperid[presidentperid$state=="West Virginia",c("year","state","party","candidatevotes")]
+WestVirginia_max=summarize(group_by(WestVirginia,year),candidatevotes=max(candidatevotes))
+WestVirginia_max_merge=merge(WestVirginia_max,WestVirginia,by=c('candidatevotes'))
+WestVirginia_max_merge_ar=arrange(WestVirginia_max_merge,year.x)
+
+Wisconsin=presidentperid[presidentperid$state=="Wisconsin",c("year","state","party","candidatevotes")]
+Wisconsin_max=summarize(group_by(Wisconsin,year),candidatevotes=max(candidatevotes))
+Wisconsin_max_merge=merge(Wisconsin_max,Wisconsin,by=c('candidatevotes'))
+Wisconsin_max_merge_ar=arrange(Wisconsin_max_merge,year.x)
+
+Wyoming=presidentperid[presidentperid$state=="Wyoming",c("year","state","party","candidatevotes")]
+Wyoming_max=summarize(group_by(Wyoming,year),candidatevotes=max(candidatevotes))
+Wyoming_max_merge=merge(Wyoming_max,Wyoming,by=c('candidatevotes'))
+Wyoming_max_merge_ar=arrange(Wyoming_max_merge,year.x)
+
+
+AL=if(sum(count(filter(Alabama_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(Alabama_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(Alabama_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(Alabama_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(Alabama_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(Alabama_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(Alabama_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(Alabama_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+AK=if(sum(count(filter(Alaska_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(Alaska_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(Alaska_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(Alaska_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(Alaska_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(Alaska_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(Alaska_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(Alaska_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+AZ=if(sum(count(filter(Arizona_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(Arizona_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(Arizona_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(Arizona_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(Arizona_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(Arizona_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(Arizona_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(Arizona_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+AR=if(sum(count(filter(Arkansas_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(Arkansas_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(Arkansas_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(Arkansas_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(Arkansas_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(Arkansas_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(Arkansas_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(Arkansas_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+CA=if(sum(count(filter(California_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(California_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(California_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(California_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(California_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(California_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(California_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(California_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+CO=if(sum(count(filter(Colorado_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(Colorado_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(Colorado_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(Colorado_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(Colorado_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(Colorado_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(Colorado_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(Colorado_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+CT=if(sum(count(filter(Connecticut_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(Connecticut_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(Connecticut_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(Connecticut_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(Connecticut_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(Connecticut_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(Connecticut_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(Connecticut_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+DE=if(sum(count(filter(Delaware_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(Delaware_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(Delaware_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(Delaware_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(Delaware_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(Delaware_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(Delaware_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(Delaware_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+DC=if(sum(count(filter(DistrictofColumbia_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(DistrictofColumbia_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(DistrictofColumbia_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(DistrictofColumbia_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(DistrictofColumbia_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(DistrictofColumbia_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(DistrictofColumbia_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(DistrictofColumbia_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+FL=if(sum(count(filter(Florida_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(Florida_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(Florida_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(Florida_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(Florida_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(Florida_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(Florida_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(Florida_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+GA=if(sum(count(filter(Georgia_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(Georgia_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(Georgia_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(Georgia_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(Georgia_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(Georgia_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(Georgia_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(Georgia_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+HI=if(sum(count(filter(Hawaii_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(Hawaii_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(Hawaii_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(Hawaii_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(Hawaii_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(Hawaii_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(Hawaii_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(Hawaii_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+ID=if(sum(count(filter(Idaho_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(Idaho_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(Idaho_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(Idaho_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(Idaho_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(Idaho_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(Idaho_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(Idaho_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+IL=if(sum(count(filter(Illinois_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(Illinois_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(Illinois_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(Illinois_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(Illinois_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(Illinois_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(Illinois_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(Illinois_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+IN=if(sum(count(filter(Indiana_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(Indiana_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(Indiana_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(Indiana_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(Indiana_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(Indiana_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(Indiana_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(Indiana_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+IA=if(sum(count(filter(Iowa_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(Iowa_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(Iowa_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(Iowa_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(Iowa_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(Iowa_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(Iowa_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(Iowa_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+KS=if(sum(count(filter(Kansas_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(Kansas_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(Kansas_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(Kansas_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(Kansas_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(Kansas_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(Kansas_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(Kansas_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+KY=if(sum(count(filter(Kentucky_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(Kentucky_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(Kentucky_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(Kentucky_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(Kentucky_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(Kentucky_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(Kentucky_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(Kentucky_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+LA=if(sum(count(filter(Louisiana_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(Louisiana_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(Louisiana_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(Louisiana_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(Louisiana_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(Louisiana_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(Louisiana_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(Louisiana_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+ME=if(sum(count(filter(Maine_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(Maine_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(Maine_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(Maine_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(Maine_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(Maine_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(Maine_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(Maine_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+MD=if(sum(count(filter(Maryland_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(Maryland_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(Maryland_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(Maryland_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(Maryland_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(Maryland_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(Maryland_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(Maryland_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+MA=if(sum(count(filter(Massachusetts_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(Massachusetts_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(Massachusetts_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(Massachusetts_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(Massachusetts_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(Massachusetts_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(Massachusetts_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(Massachusetts_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+MI=if(sum(count(filter(Michigan_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(Michigan_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(Michigan_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(Michigan_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(Michigan_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(Michigan_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(Michigan_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(Michigan_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+MN=if(sum(count(filter(Minnesota_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(Minnesota_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(Minnesota_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(Minnesota_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(Minnesota_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(Minnesota_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(Minnesota_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(Minnesota_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+MS=if(sum(count(filter(Mississippi_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(Mississippi_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(Mississippi_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(Mississippi_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(Mississippi_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(Mississippi_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(Mississippi_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(Mississippi_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+MO=if(sum(count(filter(Missouri_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(Missouri_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(Missouri_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(Missouri_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(Missouri_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(Missouri_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(Missouri_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(Missouri_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+MT=if(sum(count(filter(Montana_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(Montana_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(Montana_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(Montana_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(Montana_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(Montana_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(Montana_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(Montana_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+NE=if(sum(count(filter(Nebraska_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(Nebraska_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(Nebraska_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(Nebraska_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(Nebraska_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(Nebraska_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(Nebraska_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(Nebraska_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+NV=if(sum(count(filter(Nevada_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(Nevada_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(Nevada_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(Nevada_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(Nevada_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(Nevada_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(Nevada_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(Nevada_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+NH=if(sum(count(filter(NewHampshire_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(NewHampshire_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(NewHampshire_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(NewHampshire_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(NewHampshire_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(NewHampshire_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(NewHampshire_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(NewHampshire_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+NJ=if(sum(count(filter(NewJersey_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(NewJersey_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(NewJersey_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(NewJersey_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(NewJersey_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(NewJersey_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(NewJersey_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(NewJersey_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+NM=if(sum(count(filter(NewMexico_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(NewMexico_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(NewMexico_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(NewMexico_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(NewMexico_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(NewMexico_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(NewMexico_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(NewMexico_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+NY=if(sum(count(filter(NewYork_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(NewYork_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(NewYork_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(NewYork_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(NewYork_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(NewYork_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(NewYork_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(NewYork_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+NC=if(sum(count(filter(NorthCarolina_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(NorthCarolina_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(NorthCarolina_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(NorthCarolina_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(NorthCarolina_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(NorthCarolina_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(NorthCarolina_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(NorthCarolina_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+ND=if(sum(count(filter(NorthDakota_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(NorthDakota_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(NorthDakota_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(NorthDakota_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(NorthDakota_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(NorthDakota_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(NorthDakota_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(NorthDakota_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+OH=if(sum(count(filter(Ohio_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(Ohio_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(Ohio_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(Ohio_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(Ohio_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(Ohio_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(Ohio_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(Ohio_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+OK=if(sum(count(filter(Oklahoma_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(Oklahoma_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(Oklahoma_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(Oklahoma_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(Oklahoma_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(Oklahoma_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(Oklahoma_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(Oklahoma_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+OR=if(sum(count(filter(Oregon_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(Oregon_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(Oregon_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(Oregon_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(Oregon_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(Oregon_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(Oregon_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(Oregon_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+PA=if(sum(count(filter(Pennsylvania_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(Pennsylvania_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(Pennsylvania_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(Pennsylvania_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(Pennsylvania_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(Pennsylvania_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(Pennsylvania_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(Pennsylvania_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+RI=if(sum(count(filter(RhodeIsland_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(RhodeIsland_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(RhodeIsland_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(RhodeIsland_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(RhodeIsland_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(RhodeIsland_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(RhodeIsland_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(RhodeIsland_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+SC=if(sum(count(filter(SouthCarolina_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(SouthCarolina_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(SouthCarolina_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(SouthCarolina_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(SouthCarolina_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(SouthCarolina_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(SouthCarolina_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(SouthCarolina_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+SD=if(sum(count(filter(SouthDakota_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(SouthDakota_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(SouthDakota_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(SouthDakota_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(SouthDakota_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(SouthDakota_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(SouthDakota_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(SouthDakota_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+TN=if(sum(count(filter(Tennessee_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(Tennessee_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(Tennessee_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(Tennessee_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(Tennessee_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(Tennessee_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(Tennessee_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(Tennessee_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+TX=if(sum(count(filter(Texas_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(Texas_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(Texas_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(Texas_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(Texas_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(Texas_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(Texas_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(Texas_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+UT=if(sum(count(filter(Utah_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(Utah_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(Utah_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(Utah_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(Utah_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(Utah_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(Utah_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(Utah_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+VT=if(sum(count(filter(Vermont_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(Vermont_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(Vermont_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(Vermont_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(Vermont_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(Vermont_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(Vermont_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(Vermont_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+VA=if(sum(count(filter(Virginia_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(Virginia_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(Virginia_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(Virginia_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(Virginia_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(Virginia_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(Virginia_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(Virginia_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+WA=if(sum(count(filter(Washington_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(Washington_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(Washington_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(Washington_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(Washington_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(Washington_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(Washington_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(Washington_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+WV=if(sum(count(filter(WestVirginia_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(WestVirginia_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(WestVirginia_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(WestVirginia_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(WestVirginia_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(WestVirginia_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(WestVirginia_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(WestVirginia_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+WI=if(sum(count(filter(Wisconsin_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(Wisconsin_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(Wisconsin_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(Wisconsin_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(Wisconsin_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(Wisconsin_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(Wisconsin_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(Wisconsin_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+WY=if(sum(count(filter(Wyoming_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=7&sum(count(filter(Wyoming_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("solid republican")}else if(sum(count(filter(Wyoming_max_merge_ar,party=="republican"&year.x>=1988),party)$n)>=5&sum(count(filter(Wyoming_max_merge_ar,party=="republican"&year.x>=2000),party)$n)>=4){print("lean republican")}else if(sum(count(filter(Wyoming_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=1&sum(count(filter(Wyoming_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("solid democrat")}else if(sum(count(filter(Wyoming_max_merge_ar,party=="republican"&year.x>=1988),party)$n)<=3&sum(count(filter(Wyoming_max_merge_ar,party=="republican"&year.x>=2000),party)$n)<=1){print("lean democrat")}else{print("competitive")}
+
+
+install.packages("usmap")
+library(usmap)
+library(ggplot2)
+vote_map=data.frame("state"=c("Alabama","Alaska","Arizona","Arkansas","California","Colorado", "Connecticut","Delaware","District of Columbia","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota", "Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York", "North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"),"party"=c(AL,AK,AZ,AR,CA,CO,CT,DE,DC,FL,GA,HI,ID,IL,IN,IA,KS,KY,LA,ME,MD,MA,MI,MN,MS,MO,MT,NE,NV,NH,NJ,NM,NY,NC,ND,OH,OK,OR,PA,RI,SC,SD,TN,TX,UT,VT,VA,WA,WV,WI,WY))
+plot_usmap(data = vote_map,values = "party",color="white",labels = T)
+
+ElectoralVotes=read.csv("D:/New folder (2)/ElectoralVotes.csv")
+ElectoralVotes$Winning.Party=NULL
+ElectoralVotes$state=ElectoralVotes$State
+vote_map_total=merge(ElectoralVotes,vote_map,by=c("state"))
+vote_map_total$State=NULL
+
+vote_map_total=vote_map_total%>%mutate(win_rate=case_when(vote_map_total$party=="solid republican"~0.875,vote_map_total$party=="solid democrat"~0.875,vote_map_total$party=="lean republican"~0.65,vote_map_total$party=="lean democrat"~0.65,vote_map_total$party=="competitive"~0.5,))
+vote_map_total=vote_map_total%>%mutate(republican_vote_pred=case_when(vote_map_total$party=="solid republican"~vote_map_total$Votes*0.875,vote_map_total$party=="solid democrat"~vote_map_total$Votes*(1-0.875),vote_map_total$party=="lean republican"~vote_map_total$Votes*0.65,vote_map_total$party=="lean democrat"~vote_map_total$Votes*(1-0.65),vote_map_total$party=="competitive"~vote_map_total$Votes*0.5,))
+vote_map_total=vote_map_total%>%mutate(democrat_vote_pred=case_when(vote_map_total$party=="solid republican"~vote_map_total$Votes*(1-0.875),vote_map_total$party=="solid democrat"~vote_map_total$Votes*(0.875),vote_map_total$party=="lean republican"~vote_map_total$Votes*(1-0.65),vote_map_total$party=="lean democrat"~vote_map_total$Votes*(0.65),vote_map_total$party=="competitive"~vote_map_total$Votes*0.5,))
+View(vote_map_total)
